@@ -4,6 +4,9 @@ from flask import Flask
 #create a new app by createing a variable traditinally called app and invoke the Flask class constructor 
 app = Flask(__name__)
 
+#fix for codepipleine
+application = app 
+
 #create a route
 @app.route('/')
 def index():                  #create a function for this route 
