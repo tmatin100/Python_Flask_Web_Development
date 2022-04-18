@@ -11,14 +11,14 @@ testimonials = [
     },
 
     { 
-        'id': 35, 
+        'id': 20, 
         'name': 'Aakash', 
         'message': 'Never have I understood OOP until now'
         
     },
 
     { 
-        'id': 40, 
+        'id': 30, 
         'name': 'Maitn', 
         'message': 'I watched all 200 hrs staright!'
         
