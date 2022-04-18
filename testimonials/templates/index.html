@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title> Welcome to my Website!</title>
 </head>
-
 <body>
 <h1>Testimonials!</h1>
-<p>Here are some great things people have said: </p>
+<p> Here are some great things people have said: </p>
 
-{% for each testimonial in testimonials %}
-    <p>{{testimonial.message}}</p>
-    <p>- {{testimonial.name}}</p>
-
-{% endfor %}
-
+{% for testimonial in testimonials %}
+    <p>{{testimonials.message}}</p>
+    <p>-{{testimonials.name}}</p>
 
 </body>
-
 </html>
