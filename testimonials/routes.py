@@ -31,6 +31,13 @@ def index():                  #create a function for this route
     #return '<h1> hello world</h1>'
     return render_template('index.html', testimonials = testimonials)
 
+@app.route('/<id>')
+def show_testimonial(id): 
+
+    for testimonial in testimonials:
+        if testimonial.get('id') == int(id):
+            return render_template('testimonial.html', testimonial = testimonial)
+
 #@app.route('/api/testimonials')
 #def testimonials():
    # return {'testimonial': ['great', 'its ok', 'fantastic']}

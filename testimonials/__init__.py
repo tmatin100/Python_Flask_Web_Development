@@ -6,4 +6,4 @@ app = Flask(__name__)
 #application = app 
 
 #import the routes from the route file 
-import testimonials.route
+import testimonials.routes
