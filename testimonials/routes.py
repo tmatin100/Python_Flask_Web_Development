@@ -42,9 +42,7 @@ def show_testimonial(id):
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('404.html', error=error), 404
-abort(404)
-
+    return render_template('404.html', error=e, title="Page Not Found"), 404
 
 
 
