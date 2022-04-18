@@ -46,7 +46,6 @@ def page_not_found(e):
 abort(404)
 
 
-@app.route('/testimonials')
 
 
 #@app.route('/api/testimonials')
