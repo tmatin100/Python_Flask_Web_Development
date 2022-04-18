@@ -33,16 +33,16 @@ def show_testimonial():                  #create a function for this route
     return render_template('index.html', testimonials = testimonials)
 
 @app.route('/testimonials/<id>')
-def show_testimonial(id): 
+def show_testimonial(id):
 
     for testimonial in testimonials:
         if testimonial.get('id') == int(id):
-            return render_template('testimonial.html', testimonial = testimonial)
+            return render_template('testimonial.html', testimonial=testimonial)
+    abort(404)
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('404.html', titile= "404 NOT FOUND"), 404
-
+    return render_template('404.html', error=error), 404
 abort(404)
 
 
