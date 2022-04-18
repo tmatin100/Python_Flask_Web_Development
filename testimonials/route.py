@@ -3,10 +3,11 @@ from testimonials import app
 from flask import render_template
 
 testimonials = [ 
-    {
+    { 
         'id': 10, 
         'name': 'Tamzidul', 
-        'message': 'Your courses helped me land a new job! '
+        'message': 'Your course helped me land a new job!'
+        
     },
 
     { 
