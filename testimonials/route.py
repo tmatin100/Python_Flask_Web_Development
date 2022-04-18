@@ -3,7 +3,7 @@ from re import T
 from testimonials import app 
 from flask import render_template
 
-testimonials = [ 
+test = [ 
     {'id': 10, 
     'name': 'Tamzidul', 
     'message': 'Your courses helped me land a new job! '}
@@ -12,7 +12,7 @@ testimonials = [
 @app.route('/')
 def index():                  #create a function for this route 
     #return '<h1> hello world</h1>'
-    return render_template('index.html', testimonials = testimonials)
+    return render_template('index.html', testimonials = test)
 
 
 #@app.route('/api/testimonials')
