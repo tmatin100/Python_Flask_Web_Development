@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Welcome to my Website!</title>
-</head>
-<body>
-<h1>Testimonials!</h1>
-<p> Here are some great things people have said: </p>
-
+{% extends "layout.html" %}
+{% block content %}
+<p>Here are some great things people have said:</p>
 {% for testimonial in testimonials %}
     <p>{{testimonial.message}}</p>
     <p>- {{testimonial.name}}</p>
-    <a href="{{url_for('show_testimonial', id = testimonial.id)}}"><button>View detials</button></a>
-    <!-- href=/{{testimonial.id}}><button>View detials</button></a>-->
+    <a href="{{url_for('show_testimonial', id=testimonial.id)}}"><button>More info</button></a>
 {% endfor %}
-
-</body>
-</html>
+{% endblock %}
