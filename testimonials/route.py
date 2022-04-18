@@ -3,7 +3,7 @@ from testimonials import app
 
 @app.route('/')
 def index():                  #create a function for this route 
-    return 'hello'
+    return '<h1> hello world</h1>'
 
 
 @app.route('/api/testimonials')
