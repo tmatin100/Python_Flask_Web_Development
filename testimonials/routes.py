@@ -1,6 +1,6 @@
 # we neet to import app for the routes to use it 
 from testimonials import app 
-from flask import render_template, abort 
+from flask import render_template, abort, url_for
 
 testimonials = [ 
     { 
@@ -32,7 +32,7 @@ def show_testimonial():                  #create a function for this route
     #return '<h1> hello world</h1>'
     return render_template('index.html', testimonials = testimonials)
 
-@app.route('/testimonials/<id>')
+@app.route('/get/testimonials/<id>')
 def show_testimonial(id):
 
     for testimonial in testimonials:
