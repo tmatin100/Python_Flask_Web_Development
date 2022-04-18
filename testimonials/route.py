@@ -8,4 +8,4 @@ def index():                  #create a function for this route
 
 @app.route('/api/testimonials')
 def testimonials():
-    return {'testimonial': ['great', 'its ok', 'fantastic',]}
+    return {'testimonial': ['great', 'its ok', 'fantastic']}
